@@ -9,18 +9,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">    <title>SaaS Naum Asafov</title>
 </head>
 <body>
+   <img src="images/menu.png" alt="" id="menu-icon" onclick="toggleSidebar(0)">
     <div class="container-fluid">
         <div class="row">
-            <div class="sidebar col-lg-3 col-xl-2 d-none d-lg-block">
+            <div class="sidebar col-lg-3 col-xl-2 d-none d-lg-block" id="sidebar">
                 <p id="Saas-text">
                     SaaS Kit
                 </p>
                 <hr class="graph-divider">
                 <div class="row">
-                    <div class="col-3 avatar-container">
+                    <div class="col-md-3 avatar-container">
                         <img src="images/avatar.jpg" alt="Avatar" class="avatar-image">
                     </div>
-                    <div class="col-9 sidebar-user-info">
+                    <div class="col-md-9sidebar-user-info">
                         <p class="user-name">Sierra Ferguson</p>
                         <p class="user-email">s.ferguson@gmail.com</p>
                     </div>
@@ -66,19 +67,19 @@
                 <div class="toggle-box">
                     <img src="images/Subtract.svg" alt="icon" class="toggle-icon regular-icon">
                     <img src="images/Subtract-hover.svg" alt="icon" class="toggle-icon on-hover-icon">
-                    <a href="#" onmouseover="changeIconOnHover(this)" onmouseout="restoreIcon(this)" class="sidebar-link toggle-link">Toggle sidebar</a>
+                    <a href="#" onclick="toggleSidebar(1)" onmouseover="changeIconOnHover(this)" onmouseout="restoreIcon(this)" class="sidebar-link toggle-link">Toggle sidebar</a>
                 </div>
             </div>
-            <div class="col-lg-9 col-xl-10 col-sm-12">
+            <div class="col-lg-9 col-xl-10 col-sm-12" id="site-content">
                 <div class="row">
                     <div class="col-12 global-search">
                         <div class="row">
-                            <div class="col-2 col-md-1">
+                            <div class="col-3 col-md-1">
                                 <a href="#" class="search-link">
                                     <img src="images/search.png" alt="search" class="search-icon">
                                 </a>
                             </div>
-                            <div class="col-8 col-md-10">
+                            <div class="col-7 col-md-10">
                                 <span class="search-text">Global Search</span>
                             </div>
                             <div class="col-2 col-md-1">
