@@ -3,7 +3,7 @@ body{
     background-color: #E5E5E5 !important;;
 }
 a{
- text-decoration: none;
+ text-decoration: none !important;
 }
 *{
     font-family: 'Poppins', sans-serif;
@@ -54,6 +54,7 @@ a{
     margin-right: 13px;
     width: 20px;
     height: 20px;
+    color: #334D6E; 
 }
 .sidebar-active-link{
     color: #109CF1;
@@ -66,6 +67,12 @@ a{
    font-style: normal;
    font-weight: 500;
    font-size: 17px;
+}
+.on-hover-icon{
+    display: none;
+}
+.sidebar-link:hover{
+    color: #109CF1;
 }
 @media screen and (max-width: 1220px) {
     .sidebar-active-link,.sidebar-link{
@@ -242,6 +249,9 @@ a{
     color: #334D6E;
     opacity: 0.5;
 }
+.week-span:hover{
+    color: #109CF1;
+}
 
 .today{
     background-color: #3498DB;
@@ -257,9 +267,7 @@ a{
     height: 18px;
     padding: 4px 4px 4px 4px;
 }
-.week-span.blue{
-    color: #109CF1;
-}
+
 
 .m-card{
     margin-bottom: 20px;
@@ -267,6 +275,10 @@ a{
     padding-bottom: 20px;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
     border-radius: 4px;
+    transition: all .2s ease-in-out;
+}
+.m-card:hover{
+    transform: scale(1.03);
 }
 .card-header-text-left{
     font-style: normal;
