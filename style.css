@@ -25,6 +25,16 @@ a{
     display: none;
     cursor: pointer;
 }
+#arrow-indicate-gesture{
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%);
+}
 
 @media screen and (max-width: 1000px) {
     #menu-icon{
